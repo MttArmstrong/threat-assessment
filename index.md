@@ -2,8 +2,4 @@
 site: sandpaper::sandpaper_site
 ---
 
-This is a new lesson built with [The Carpentries Workbench][workbench]. 
-
-
-[workbench]: https://carpentries.github.io/sandpaper-docs
-
+This is Carpentries Workbench version of Charles Weir's Developer Security Essentials workshop.

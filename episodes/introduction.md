@@ -1,114 +1,70 @@
 ---
-title: "Using Markdown"
-teaching: 10
-exercises: 2
+title: "Introduction"
+teaching: 5
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How do you write a lesson using Markdown and `{sandpaper}`?
+- What is the purpose of this workshop?
+<!-- - What is threat assessment?
+- What is benefit analysis? -->
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with The Carpentries Workbench
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- At the end of this module, you should understand the purpose of this workshop.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Introduction
+## Purpose
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown](https://pandoc.org/MANUAL.html) for static files and
-[R Markdown][r-markdown] for dynamic files that can render code into output. 
-Please refer to the [Introduction to The Carpentries 
-Workbench](https://carpentries.github.io/sandpaper-docs/) for full documentation.
+In a world where software is essential for nearly every aspect of modern life, the need for secure development have never been greater.
+However, many software engineers enter the workforce with limited knowledge or training on how to contribute to security during development without being security experts.
+In this workshop, you will learn about and participate in activities that software engineers can perform to make development more secure.
+These activities include:
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson:
+- Identifying security risks
+- Evaluating the trade-offs of addressing those risks
+- Effectively communicating with other stakeholders about the problem.
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+This workshop is intended for research software engineers.
+Due to the diverse backgrounds an RSE can come from, we cannot speculate on your current security knowledge or expertise.
+Therefore, we assume you have limited knowledge of security. 
+The good news is that this workshop is derived largely from the [Developer Security Essentials] workshop by Charles Weir.
+[Developer Security Essentials] aims to instruct software engineers on threat assessment and benefit analysis, requiring little security expertise.
+Other information in this workshop is informed by Charles Weir's [Secure Development Handbook].
+This handbook is a good reference guide for the topics of this workshop and contains additional topics you may find interesting.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+> "As someone working with developers and concerned about
+software security, you want the ‘how to do it’. Not the
+technical detail, but how you can change your professional
+approach and that of your colleagues to deliver adequate
+software security at a minimum cost. You reach for the
+dummies guide, and there’s nothing like that available.
+This book addresses that gap."
+>
+Source: [Secure Development Handbook]
 
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
+To start the workshop, we will play a card game called the "Agile Security Game."
+This game does not require security expertise to play and motivates developers to start considering their own projects' security and privacy requirements.
+We assume participants do not have a common project they can discuss, therefore an artifical project and its connections are supplied.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: challenge 
-
-## Challenge 1: Can you do it?
-
-What is the output of this command?
-
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
-
-:::::::::::::::::::::::: solution 
-
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
-
-:::::::::::::::::::::::::::::::::
+The next part of the workshop focuses on threat assessment and benefit analysis.
+In this activity, we explore the question "Who might do what bad thing to whom?"
+Similarly to the card game, an artifical project is supplied.
+This activity results in a list of identified threats to address.
+The next activity focuses on benefit analysis.
+In this activity, participants must make a case to "product management" about why they should address a given threat.
 
 
-## Challenge 2: how do you nest solutions within challenge blocks?
-
-:::::::::::::::::::::::: solution 
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Figures
-
-You can use standard markdown for static figures with the following syntax:
-
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
-
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
-
-::::::::::::::::::::::::::::::::::::: callout
-
-Callout sections can highlight information.
-
-They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present "asides": 
-content that is not central to the narrative of the lesson,
-e.g. by providing the answer to a commonly-asked question.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-## Math
-
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+- Threat assessment and benefit analysis are both activities that developers can perform with little security expertise.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-[r-markdown]: https://rmarkdown.rstudio.com/
+[Secure Development Handbook]: https://www.securedevelopment.org/resources/
+[Developer Security Essentials]: https://www.securedevelopment.org/workshops/
