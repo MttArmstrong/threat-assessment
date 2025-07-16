@@ -7,18 +7,19 @@ exercises: 0
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - What is the purpose of this workshop?
-<!-- - What is threat assessment?
-- What is benefit analysis? -->
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- At the end of this module, you should understand the purpose of this workshop.
+- n/a
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Purpose
+
+![](fig/security-concern.PNG){alt='UI of Moneyzoom' style="float:right; width:300px;height:auto"}
+
 
 In a world where software is essential for nearly every aspect of modern life, the need for secure development have never been greater.
 However, many software engineers enter the workforce with limited knowledge or training on how to contribute to security during development without being security experts.

@@ -74,9 +74,199 @@ MoneyZoom is an off-banking app. Here’s what I as a user can do with MoneyZoom
 
 The MoneyZoom app communicates with an ‘App Server’, which itself is connected to banking back ends, the EMV networks, and a variety of other services, as shown in Figure 2.
 
+
+
+
+<!-- SPRINTS -->
+
+## Sprints
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Sprint 1 
+
+Using 11 points, pick the stories that will be completed this sprint.
+
+
+::::::::::::::::::::::::::::::::::::: hint
+
+### Something bad happens...
+
+Scanning Kiddie – gets to server by accident – maliciously deletes all data.
+
+DoSing Kiddie – gets to server by accident – uses for ddos attacks on other servers
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::: solution
+
+### Mitigations
+
+Scanning Kiddie – gets to server by accident – maliciously deletes all data.
+
+- Backup Server (BS)  **OR**  Server patches up to date (PT)
+
+
+DoSing Kiddie – gets to server by accident – uses for ddos attacks on other servers
+
+- Server patches up to date (PT)
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
+
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Sprint 2 
+
+Using 11 points, pick the stories that will be completed this sprint.
+
+
+::::::::::::::::::::::::::::::::::::: hint
+
+### Something bad happens...
+
+Hacking Kiddie – gets to server by accident – downloads and publishes what he finds.
+
+Phishing Kiddie – sends spam email, gets subscribers to download rogue version or enter credentials in spoof website.
+
+Detective or journalist hacker – wants account information for specific users – server hack – publishes information or causes customer complaints.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::: solution
+
+### Mitigations
+
+Hacking Kiddie – gets to server by accident – downloads and publishes what he finds.
+
+- Server patches up to date (PT)
+
+Phishing Kiddie – sends spam email, gets subscribers to download rogue version or enter credentials in spoof website.
+
+- Contingency Plan (CP)  **OR**  Two Factor Authentication (2F*)
+
+Detective or journalist hacker – wants account information for specific users – server hack – publishes information or causes customer complaints.
+
+- Server Pen testing (PT) AND Encrypt and Hide data on server (EH*)
+
+\* requires penetration testing
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
+
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Sprint 3 
+
+Using **12** points, pick the stories that will be completed this sprint.
+
+::::::::::::::::::::::::::::::::::::: hint
+
+### Something bad happens...
+
+MITM kiddie – Spoofs WiFi access point in airport – Gains credentials – randomly hacks accounts.
+
+Aggrieved hacker – gains access to server – downloads or modifies server data – publicizes.
+
+*(FATAL) MITM Mafia – spoofs WiFi access point in airport – uses dodgy root certificates to validate all banking services - gains credentials – steals small amount from each.*
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::: solution
+
+### Mitigations
+
+MITM kiddie – Spoofs WiFi access point in airport – Gains credentials – randomly hacks accounts.
+
+- HTTPS in Protocol (HP)  **OR**  Two Factor Authentication (2F)
+
+Aggrieved hacker – gains access to server – downloads or modifies server data – publicizes.
+
+- Server Pen Testing, **AND** Encrypt and Hide data on Server (PT, EH*).
+
+*(FATAL) MITM Mafia – spoofs WiFi access point in airport – uses dodgy root certificates to validate all banking services - gains credentials – steals small amount from each.*
+
+- Forced Upgrades and SSL Pinning (FU, SS) **OR** Two Factor Authentication (2F)
+
+\* requires penetration testing
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Sprint 4
+
+Using **12** points, pick the stories that will be completed this sprint.
+
+::::::::::::::::::::::::::::::::::::: hint
+
+### Something bad happens...
+
+*Mafia Team – Gain access to office, get passwords from server logs, small theft from tens of thousands of accounts.*
+
+*Mafia Advanced Programming Team – gain access to server though zero day exploit, installed hacked version, transfer money out of accounts.*
+
+*Mafia APT - Malware on device via email – sends back credentials found in logs to command and control server – used to clean out all compromised accounts.*
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::: solution
+
+### Mitigations
+
+*Mafia Team – Gain access to office, get passwords from server logs, small theft from tens of thousands of accounts.*
+
+-Prevent Access to Office (PA) **OR** Filtered Logging for Server (FL) **OR** Two Factor Authentication (2F)
+
+*Mafia Advanced Programming Team – gain access to server though zero day exploit, installed hacked version, transfer money out of accounts.*
+
+- Network Monitoring for Server (NM)
+
+*Mafia APT - Malware on device via email – sends back credentials found in logs to command and control server – used to clean out all compromised accounts.*
+
+- Forced Upgrades **AND** Sanitize App Logging (FU, SA), **else**: Two Factor Authentication (2F)
+
+\* requires penetration testing
+
+*Text* Fatal
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+::::::::::::::::::::::::::::::::::::: callout 
+
+## Some Notes about the Game
+
+In a real world situation obviously one wouldn’t get feedback and lists of attacks before the
+start of the next agile sprint.
+These king of ‘security enhancement’ sprints we’re doing here would actually be interspersed with a number of functionality sprints, allowing plenty of time for feedback before the next sprint.
+
+Also, observe in the attack descriptions that in some cases the mitigations are alternatives: the
+first attack could be mitigated by either BS or PT.
+But in other cases the teams must have completed all of a collection of tasks to mitigate the attack.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- key point 1
+- Choosing how to use your limited resources to increase security is difficult.
+- Assess possible threats before they happen!
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
