@@ -13,7 +13,13 @@
     <loc>https://INTERSECT-training.github.io/threat-assessment/agile-security-game.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/threat-assessment/aio.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/threat-assessment/benefit-analysis.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/threat-assessment/images.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/threat-assessment/index.html</loc>
@@ -31,13 +37,22 @@
     <loc>https://INTERSECT-training.github.io/threat-assessment/instructor/agile-security-game.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/threat-assessment/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/threat-assessment/instructor/benefit-analysis.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/threat-assessment/instructor/images.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/threat-assessment/instructor/index.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/threat-assessment/instructor/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/threat-assessment/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/threat-assessment/instructor/profiles.html</loc>
@@ -50,6 +65,9 @@
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/threat-assessment/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/threat-assessment/key-points.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/threat-assessment/profiles.html</loc>
