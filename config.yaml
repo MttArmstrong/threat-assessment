@@ -12,35 +12,35 @@
 # This option supports custom types so lessons can be branded
 # and themed with your own logo and alt-text (see `carpentry_description`)
 # See https://carpentries.github.io/sandpaper-docs/editing.html#adding-a-custom-logo
-carpentry: 'incubator'
+carpentry: 'intersect'
 
 # Alt-text description of the lesson.
-carpentry_description: 'Lesson Description'
+carpentry_description: 'RSE Security Essentials'
 
 # Overall title for pages.
-title: 'Lesson Title' # FIXME
+title: 'RSE Security Essentials' # FIXME
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: ~ # FIXME
+created: 2025-7-7~ # FIXME
 
 # Comma-separated list of keywords for the lesson
-keywords: 'software, data, lesson, The Carpentries' # FIXME
+keywords: 'threat assessment, threat modeling, benefit analysis, security negotiations, security champion' # FIXME
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'pre-alpha' # FIXME
+life_cycle: 'alpha' # FIXME
 
 # License of the lesson
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/carpentries/workbench-template-md' # FIXME
+source: 'https://github.com/INTERSECT-training/threat-assessment' # FIXME
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org' # FIXME
+contact: 'maarmstrong3@crimson.ua.edu' # FIXME
 
 # Navigation ------------------------------------------------
 #
@@ -67,12 +67,18 @@ contact: 'team@carpentries.org' # FIXME
 # Order of episodes in your lesson
 episodes: 
 - introduction.md
+- agile-security-game.md
+- threat-assessment.md
+- benefit-analysis.md
 
 # Information for Learners
 learners: 
 
 # Information for Instructors
 instructors: 
+- agile-security-game.md
+- threat-assessment.md
+- benefit-analysis.md
 
 # Learner Profiles
 profiles: 
@@ -82,4 +88,4 @@ profiles:
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
 
-
+varnish: intersect-training/varnish
