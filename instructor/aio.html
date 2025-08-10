@@ -122,9 +122,6 @@
             More <i data-feather="chevron-down"></i>
           </button>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-<li><a class="dropdown-item" href="agile-security-game.html">Workshop 1: Agile Security Game</a></li>
-<li><a class="dropdown-item" href="threat-assessment.html">Workshop 2: Threat Assessment</a></li>
-<li><a class="dropdown-item" href="benefit-analysis.html">Workshop 3: Benefit Analysis</a></li>
 <hr>
 <li><a class="dropdown-item" href="reference.html">Reference</a></li>
           </ul>
@@ -316,10 +313,7 @@
                       <li>
                         <a href="../instructor/images.html">Extract All Images</a>
                       </li>
-                      <li><a href="agile-security-game.html">Workshop 1: Agile Security Game</a></li>
-<li><a href="threat-assessment.html">Workshop 2: Threat Assessment</a></li>
-<li><a href="benefit-analysis.html">Workshop 3: Benefit Analysis</a></li>
-<hr>
+                      <hr>
 <li><a class="dropdown-item" href="reference.html">Reference</a></li>
                     </ul>
 </div>
@@ -453,23 +447,54 @@ developers can perform with little security expertise.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section><section id="aio-agile-security-game"><p>Content from <a href="agile-security-game.html">Workshop 1: Agile Security Game</a></p>
+</section></section><section id="aio-agile-security-game"><p>Content from <a href="agile-security-game.html">Agile Security Game</a></p>
 <hr>
-<p>Last updated on 2025-07-16 |
+<p>Last updated on 2025-08-10 |
 
-        <a href="https://github.com/INTERSECT-training/threat-assessment/edit/main/instructors/agile-security-game.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/INTERSECT-training/threat-assessment/edit/main/episodes/agile-security-game.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 40 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
-</h2>
-<hr class="half-width">
-<p>It’s often difficult for developers to grasp what makes software
-security important, and how best to start addressing it. Many experts
-agree that the best approach is to use a game. The Developer Security
-Essentials package uses this game: The Agile App Security Game. Teams of
-developers find it both fun and motivating as a way to start considering
-their own projects’ security and privacy requirements.</p>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do you play the agile security game?</li>
+<li>What are the outcomes of the game?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>For each Agile sprint, discuss and agree amongst yourselves which
+stories to implemnt.</li>
+<li>Record your chosen sotries for that sprint (write down the code
+letters).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Notes - Prep
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
 <div class="section level3">
 <h3 id="preparation-in-advance---face-to-face">Preparation in Advance - Face-to-Face<a class="anchor" aria-label="anchor" href="#preparation-in-advance---face-to-face"></a>
 </h3>
@@ -506,9 +531,9 @@ each (A, B, C, or D), with cover. A packs have 8 cards; B, C, and D have
 4 cards.</li>
 </ol>
 </div>
-</section><section><h2 class="section-heading" id="running-the-workshop">Running the Workshop<a class="anchor" aria-label="anchor" href="#running-the-workshop"></a>
+<div class="section level2">
+<h2 id="running-the-workshop">Running the Workshop<a class="anchor" aria-label="anchor" href="#running-the-workshop"></a>
 </h2>
-<hr class="half-width">
 <p>The workshop has an introduction, up to four rounds, or ‘sprints’,
 and a wrap-up session. Timings are approximate. Adjust them according to
 how the teams are getting on in each step.</p>
@@ -525,9 +550,93 @@ might use the first PowerPoint slide.</p>
 <p>Face-to-face: Organise the players into teams of 2-6 people, each
 team sitting at chairs around a table, as shown in Figure 1. Give each
 player a set of Player Instructions.</p>
-<p>The workshop then proceeds in ‘sprints’. Each sprint is as
-follows.</p>
-<div class="section level3">
+<p>The workshop then proceeds in ‘sprints’.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="player-instructions">Player Instructions<a class="anchor" aria-label="anchor" href="#player-instructions"></a>
+</h2>
+<hr class="half-width">
+<p>We’ve got a problem. The MoneyZoom money management app we released
+last week has gone viral. People are downloading it by the tens of
+thousands; they’re all using it massively, and it’s received thousands
+of tweets and masses of mentions on every other social network. Even the
+Daily Mail newspaper has had an article on it.</p>
+<p>Trouble is, we’re a start-up and it was only supposed to be a limited
+pilot. We’ve put in only rudimentary security because we believed it
+under the radar for any of the likely attackers. But now we’ve got
+everyone from celebrities to my grandmother using it to pay for
+everything from gas bills to online games. AND IT’S NOT SAFE!</p>
+<figure><img src="../fig/UI.PNG" style="float:right; width:300px;height:auto" alt="UI of Moneyzoom" class="figure mx-auto d-block"></figure><p>As the figure to the right shows, the functionality is all there and
+works well enough – fantastically done, team! Your mission now, should
+you choose to accept it, is to prioritise and implement the security
+enhancements to the system in the best way to minimise the threat to us
+and our users. Are you up for it? Let’s start now.</p>
+<p>It’s an agile project, of course, with two-week sprints. So each
+round in this game is a two week sprint. And for each sprint you have
+story cards with options you can take, and the estimated cost for each
+in estimation units. Some are security enhancements; some are test
+actions (the estimates include basic fixes that result from the
+testing); some are research activities which may lead to further
+tasks.</p>
+<p>You have an initial budget for each sprint of <strong>11
+units</strong>, building up as you build up the team to <strong>12 units
+for sprints 3 onwards</strong>; you can’t go over your budget and of
+course unused units don’t carry over the next sprint. You decide what
+you’ll do and the two weeks go by in a trice. And at the end of the
+sprint you’ll do a release of both app and server, and maybe get some
+new options opened up by the research you’ve done or the actions you’ve
+taken in the past.</p>
+<p>And in the next sprint, and following sprint you do the same again.
+But remember – we also have a released product out there and maybe
+attackers will be DOING NASTY THINGS. Whether they’ll be successful or
+not depends on what decisions you made.</p>
+<figure><img src="../fig/Money_model.PNG" alt="Model of Moneyzoom" class="figure mx-auto d-block"></figure><p>The game has some simplifications in timing. It ignores the time lag
+for getting apps from release to deployment. It assumes a stunningly
+agile team who can all move easily from server to app and from coding to
+reviewing to pen testing. And, remarkably, each task turns out to take
+exactly the effort estimated! So, you’ll get feedback on what NASTY
+THINGS have happened at the end of the sprint when you make each
+release.</p>
+<p>For each sprint, discuss and agree amongst yourselves which stories
+to implement; record your chosen stories for that sprint (write down the
+code letters). The purpose and the learning of the game is in the
+discussion. Once the decisions are made, the game leader will feed back
+what has happened: any exploits seen during that sprint (of the code in
+the previous sprint’s release), and any new stories suggested by the
+learning from that sprint.</p>
+</section><section><h2 class="section-heading" id="a-little-bit-about-moneyzoom">A Little Bit about Moneyzoom<a class="anchor" aria-label="anchor" href="#a-little-bit-about-moneyzoom"></a>
+</h2>
+<hr class="half-width">
+<p>MoneyZoom is an off-banking app. Here’s what I as a user can do with
+MoneyZoom:</p>
+<ul>
+<li>See the transactions I’ve done</li>
+<li>Change my name, address and contact details</li>
+<li>Transfer money to other MoneyZoom users</li>
+<li>Pay bills to well-known organisations (Utilities, tax)</li>
+<li>Pay money to other people’s bank accounts</li>
+<li>Put in money in from my payment card.</li>
+</ul>
+<p>The MoneyZoom app communicates with an ‘App Server’, which itself is
+connected to banking back ends, the EMV networks, and a variety of other
+services, as shown in Figure 2.</p>
+<!-- SPRINTS -->
+</section><section><h2 class="section-heading" id="sprints">Sprints<a class="anchor" aria-label="anchor" href="#sprints"></a>
+</h2>
+<hr class="half-width">
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Notes - Sprints
+  </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="section level3 accordion-body">
 <h3 id="sprints-1-4-10-25-minutes-each">Sprints 1-4 (10-25 minutes each)<a class="anchor" aria-label="anchor" href="#sprints-1-4-10-25-minutes-each"></a>
 </h3>
 <ol style="list-style-type: decimal">
@@ -558,6 +667,270 @@ see which attacks succeeded on them.</li>
 actually have prevented the events. We suggest you enter into the spirit
 of it, and accept anything reasonable.</p>
 </div>
+</div>
+</div>
+</div>
+<div id="sprint-1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="sprint-1" class="callout-inner">
+<h3 class="callout-title">Sprint 1</h3>
+<div class="callout-content">
+<p>Using 11 points, pick the stories that will be completed this
+sprint.</p>
+</div>
+</div>
+</div>
+<div id="accordionHint1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
+  <h4 class="accordion-header" id="headingHint1">
+  Something bad happens…
+  </h4>
+</button>
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div class="accordion-body">
+<p>Scanning Kiddie – gets to server by accident – maliciously deletes
+all data.</p>
+<p>DoSing Kiddie – gets to server by accident – uses for ddos attacks on
+other servers</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Mitigations
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>Scanning Kiddie – gets to server by accident – maliciously deletes
+all data.</p>
+<ul>
+<li>Backup Server (BS) <strong>OR</strong> Server patches up to date
+(PT)</li>
+</ul>
+<p>DoSing Kiddie – gets to server by accident – uses for ddos attacks on
+other servers</p>
+<ul>
+<li>Server patches up to date (PT)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="sprint-2" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="sprint-2" class="callout-inner">
+<h3 class="callout-title">Sprint 2</h3>
+<div class="callout-content">
+<p>Using 11 points, pick the stories that will be completed this
+sprint.</p>
+</div>
+</div>
+</div>
+<div id="accordionHint2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint2" aria-expanded="false" aria-controls="collapseHint2">
+  <h4 class="accordion-header" id="headingHint2">
+  Something bad happens…
+  </h4>
+</button>
+<div id="collapseHint2" class="accordion-collapse collapse" aria-labelledby="headingHint2" data-bs-parent="#accordionHint2">
+<div class="accordion-body">
+<p>Hacking Kiddie – gets to server by accident – downloads and publishes
+what he finds.</p>
+<p>Phishing Kiddie – sends spam email, gets subscribers to download
+rogue version or enter credentials in spoof website.</p>
+<p>Detective or journalist hacker – wants account information for
+specific users – server hack – publishes information or causes customer
+complaints.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">
+  Mitigations
+  </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<p>Hacking Kiddie – gets to server by accident – downloads and publishes
+what he finds.</p>
+<ul>
+<li>Server patches up to date (PT)</li>
+</ul>
+<p>Phishing Kiddie – sends spam email, gets subscribers to download
+rogue version or enter credentials in spoof website.</p>
+<ul>
+<li>Contingency Plan (CP) <strong>OR</strong> Two Factor Authentication
+(2F*)</li>
+</ul>
+<p>Detective or journalist hacker – wants account information for
+specific users – server hack – publishes information or causes customer
+complaints.</p>
+<ul>
+<li>Server Pen testing (PT) AND Encrypt and Hide data on server
+(EH*)</li>
+</ul>
+<p>* requires penetration testing</p>
+</div>
+</div>
+</div>
+</div>
+<div id="sprint-3" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="sprint-3" class="callout-inner">
+<h3 class="callout-title">Sprint 3</h3>
+<div class="callout-content">
+<p>Using <strong>12</strong> points, pick the stories that will be
+completed this sprint.</p>
+</div>
+</div>
+</div>
+<div id="accordionHint3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint3" aria-expanded="false" aria-controls="collapseHint3">
+  <h4 class="accordion-header" id="headingHint3">
+  Something bad happens…
+  </h4>
+</button>
+<div id="collapseHint3" class="accordion-collapse collapse" aria-labelledby="headingHint3" data-bs-parent="#accordionHint3">
+<div class="accordion-body">
+<p>MITM kiddie – Spoofs WiFi access point in airport – Gains credentials
+– randomly hacks accounts.</p>
+<p>Aggrieved hacker – gains access to server – downloads or modifies
+server data – publicizes.</p>
+<p><em>(FATAL) MITM Mafia – spoofs WiFi access point in airport – uses
+dodgy root certificates to validate all banking services - gains
+credentials – steals small amount from each.</em></p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">
+  Mitigations
+  </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+<p>MITM kiddie – Spoofs WiFi access point in airport – Gains credentials
+– randomly hacks accounts.</p>
+<ul>
+<li>HTTPS in Protocol (HP) <strong>OR</strong> Two Factor Authentication
+(2F)</li>
+</ul>
+<p>Aggrieved hacker – gains access to server – downloads or modifies
+server data – publicizes.</p>
+<ul>
+<li>Server Pen Testing, <strong>AND</strong> Encrypt and Hide data on
+Server (PT, EH*).</li>
+</ul>
+<p><em>(FATAL) MITM Mafia – spoofs WiFi access point in airport – uses
+dodgy root certificates to validate all banking services - gains
+credentials – steals small amount from each.</em></p>
+<ul>
+<li>Forced Upgrades and SSL Pinning (FU, SS) <strong>OR</strong> Two
+Factor Authentication (2F)</li>
+</ul>
+<p>* requires penetration testing</p>
+</div>
+</div>
+</div>
+</div>
+<div id="sprint-4" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="sprint-4" class="callout-inner">
+<h3 class="callout-title">Sprint 4</h3>
+<div class="callout-content">
+<p>Using <strong>12</strong> points, pick the stories that will be
+completed this sprint.</p>
+</div>
+</div>
+</div>
+<div id="accordionHint4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint4" aria-expanded="false" aria-controls="collapseHint4">
+  <h4 class="accordion-header" id="headingHint4">
+  Something bad happens…
+  </h4>
+</button>
+<div id="collapseHint4" class="accordion-collapse collapse" aria-labelledby="headingHint4" data-bs-parent="#accordionHint4">
+<div class="accordion-body">
+<p><em>Mafia Team – Gain access to office, get passwords from server
+logs, small theft from tens of thousands of accounts.</em></p>
+<p><em>Mafia Advanced Programming Team – gain access to server though
+zero day exploit, installed hacked version, transfer money out of
+accounts.</em></p>
+<p><em>Mafia APT - Malware on device via email – sends back credentials
+found in logs to command and control server – used to clean out all
+compromised accounts.</em></p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4">
+  Mitigations
+  </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div class="accordion-body">
+<p><em>Mafia Team – Gain access to office, get passwords from server
+logs, small theft from tens of thousands of accounts.</em></p>
+<p>-Prevent Access to Office (PA) <strong>OR</strong> Filtered Logging
+for Server (FL) <strong>OR</strong> Two Factor Authentication (2F)</p>
+<p><em>Mafia Advanced Programming Team – gain access to server though
+zero day exploit, installed hacked version, transfer money out of
+accounts.</em></p>
+<ul>
+<li>Network Monitoring for Server (NM)</li>
+</ul>
+<p><em>Mafia APT - Malware on device via email – sends back credentials
+found in logs to command and control server – used to clean out all
+compromised accounts.</em></p>
+<ul>
+<li>Forced Upgrades <strong>AND</strong> Sanitize App Logging (FU, SA),
+<strong>else</strong>: Two Factor Authentication (2F)</li>
+</ul>
+<p>* requires penetration testing</p>
+<p><em>Text</em> Fatal</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionInstructor3" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor3" aria-expanded="false" aria-controls="collapseInstructor3">
+  <h3 class="accordion-header" id="headingInstructor3">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Notes - Wrap Up
+  </h3>
+</button>
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
+<div class="accordion-body">
 <div class="section level3">
 <h3 id="wrap-up-10-min">Wrap-Up (10 min)<a class="anchor" aria-label="anchor" href="#wrap-up-10-min"></a>
 </h3>
@@ -583,22 +956,98 @@ functionality sprints, allowing plenty of time for feedback before the
 next sprint. Observe in the attack descriptions that in some cases the
 mitigations are alternatives: the first attack could be mitigated by
 either BS or PT. But in other cases the teams must have completed all of
-a collection of tasks to mitigate the attack. <!--
+a collection of tasks to mitigate the attack.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="some-notes-about-the-game-1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="some-notes-about-the-game-1" class="callout-inner">
+<h3 class="callout-title">Some Notes about the Game</h3>
+<div class="callout-content">
+<p>In a real world situation obviously one wouldn’t get feedback and
+lists of attacks before the start of the next agile sprint. These king
+of ‘security enhancement’ sprints we’re doing here would actually be
+interspersed with a number of functionality sprints, allowing plenty of
+time for feedback before the next sprint.</p>
+<p>Also, observe in the attack descriptions that in some cases the
+mitigations are alternatives: the first attack could be mitigated by
+either BS or PT. But in other cases the teams must have completed all of
+a collection of tasks to mitigate the attack.</p>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Choosing how to use your limited resources to increase security is
+difficult.</li>
+<li>Assess possible threats before they happen!</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- --></p>
-</div>
-</section></section><section id="aio-threat-assessment"><p>Content from <a href="threat-assessment.html">Workshop 2: Threat Assessment</a></p>
+ -->
+</section></section><section id="aio-threat-assessment"><p>Content from <a href="threat-assessment.html">Threat Assessment</a></p>
 <hr>
-<p>Last updated on 2025-07-16 |
+<p>Last updated on 2025-08-10 |
 
-        <a href="https://github.com/INTERSECT-training/threat-assessment/edit/main/instructors/threat-assessment.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/INTERSECT-training/threat-assessment/edit/main/episodes/threat-assessment.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 5 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
-<section><h2 class="section-heading" id="setup-in-advance">Setup in Advance<a class="anchor" aria-label="anchor" href="#setup-in-advance"></a>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What process do I follow to identify threats?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Your group should identify some threats and discuss their risk and
+impact.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Notes - Prep
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="section level2 accordion-body">
+<h2 id="setup-in-advance">Setup in Advance<a class="anchor" aria-label="anchor" href="#setup-in-advance"></a>
 </h2>
-<hr class="half-width">
 <ol style="list-style-type: decimal">
 <li>Ensure there is a project for each participant to discuss. Each
 project should have at least 3 participants who know it well enough to
@@ -625,9 +1074,35 @@ red.</li>
 Search “countdown timer”).</li>
 </ol>
 </div>
-</section><section><h2 class="section-heading" id="running-the-workshop">Running the Workshop<a class="anchor" aria-label="anchor" href="#running-the-workshop"></a>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <hr class="half-width">
+<p>You probably know that security is important. But how do you, as a
+developer, impact security? That first requires a different question:
+<em>not how but what?</em></p>
+<ul>
+<li>What should you be worried about?</li>
+<li>What is likely to harm you, how would it happen?</li>
+<li>If it involves external attackers, what do they want, how might they
+go about getting it and how much do we care?</li>
+</ul>
+<p>Finding the answers to these questions is called “Threat assessment”
+or “threat modelling.” In this activity, we will do a light-weight
+exercise to introduce you to the concept of threat-modelling.</p>
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Notes - Running the Workshop
+  </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="accordion-body">
 <p>The timings are approximate. Adjust them according to how the teams
 are getting on in each step.</p>
 <div class="section level3">
@@ -672,103 +1147,226 @@ Figure 4 shows an example (online); Figure 5, an example face-to-face.
 The threats towards the top right are the most important ones to
 consider in the corresponding projects.</p>
 </div>
-<div class="section level3">
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="step-1-discuss-ideate">Step 1: Discuss &amp; Ideate<a class="anchor" aria-label="anchor" href="#step-1-discuss-ideate"></a>
+</h2>
+<hr class="half-width">
+<p>Who might do what bad thing to whom?</p>
+<p><em>Person</em> – <em>Thing</em> – <em>Reason</em></p>
+<p>Begin this section by thinking about the question above. Write down
+any combination of <em>Person</em> - <em>Thing</em> - <em>Reason</em>
+you can come up with on your worksheet. Feel free to write independently
+from the rest of your group.</p>
+<p>Remeber that not every bad thing is malicious. Sometimes security or
+privacy issues happen due to accidents or misunderstandings. Discuss the
+issues amongst your group and gather as many completed threats as you
+can.</p>
+</section><section><h2 class="section-heading" id="step-2-organize">Step 2: Organize<a class="anchor" aria-label="anchor" href="#step-2-organize"></a>
+</h2>
+<hr class="half-width">
+<p>Cluster the ‘post-its’ into ‘topics’ by posting related ones close
+together and duplicates on top of each other.</p>
+</section><section><h2 class="section-heading" id="step-3-evaluation">Step 3: Evaluation<a class="anchor" aria-label="anchor" href="#step-3-evaluation"></a>
+</h2>
+<hr class="half-width">
+<p>This step identifies the most important threats.</p>
+<ul>
+<li>Pick the threats (post-its) that are (a) most likely, and (b) most
+damaging1.</li>
+<li>Place a black dot next to the each of the three you consider most
+likely;</li>
+<li>Place a red dot next to the three you think are most damaging.</li>
+</ul></section><section><h2 class="section-heading" id="step-4-summary">Step 4: Summary<a class="anchor" aria-label="anchor" href="#step-4-summary"></a>
+</h2>
+<hr class="half-width">
+<p>Using the risk-impact grid, place a selection of the threats onto
+their appropriate space.</p>
+<p>This information will be used for the Benefit Analysis section!</p>
+<div id="accordionInstructor3" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor3" aria-expanded="false" aria-controls="collapseInstructor3">
+  <h3 class="accordion-header" id="headingInstructor3">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Notes
+  </h3>
+</button>
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
+<div class="section level3 accordion-body">
 <h3 id="notes">Notes<a class="anchor" aria-label="anchor" href="#notes"></a>
 </h3>
 <p>The risk-impact grid is an inaccurate way to assess risks; however it
 is easy to understand and use. More sophisticated teams may well use
-better approaches, but these are outside the scope of this workshop.
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- --></p>
+better approaches, but these are outside the scope of this workshop.</p>
 </div>
-</section></section><section id="aio-benefit-analysis"><p>Content from <a href="benefit-analysis.html">Workshop 3: Benefit Analysis</a></p>
-<hr>
-<p>Last updated on 2025-07-16 |
-
-        <a href="https://github.com/INTERSECT-training/threat-assessment/edit/main/instructors/benefit-analysis.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<p>This workshop requires:</p>
-<ol style="list-style-type: decimal">
-<li>The results of the previous workshop (boards)</li>
-<li>Face-to-face: Flipchart paper at each table, or other means for
-participants to create a small poster.</li>
-</ol>
-<section><h2 class="section-heading" id="setup-in-advance---face-to-face">Setup in Advance - Face-to-Face<a class="anchor" aria-label="anchor" href="#setup-in-advance---face-to-face"></a>
-</h2>
-<hr class="half-width">
-<ol style="list-style-type: decimal">
-<li>From the matrix of threats created in Workshop 2, select the most
-important 3-5 to discuss. There should be at least three participants to
-discuss each one; if participant numbers are limited, use a smaller
-number and have each participant discuss more than one (which will take
-longer).</li>
-<li>Put the corresponding post-its widely separated on the walls of the
-room (perhaps one on each wall).</li>
-</ol></section><section><h2 class="section-heading" id="running-the-workshop">Running the Workshop<a class="anchor" aria-label="anchor" href="#running-the-workshop"></a>
-</h2>
-<hr class="half-width">
-<p>The timings are approximate. Adjust them according to how the teams
-are getting on in each step.</p>
-<div class="section level3">
-<h3 id="step-1-selection-5-min">Step 1: Selection (5 min)<a class="anchor" aria-label="anchor" href="#step-1-selection-5-min"></a>
-</h3>
-<p><strong>Face-to-face:</strong> Have the participants form groups next
-to the post-its according to their preferences for the threats they each
-would like to discuss, arranging themselves so that appropriate numbers
-are next to each one.</p>
 </div>
-<div class="section level3">
-<h3 id="step-2-mitigation-and-positive-benefit-30-minutes">Step 2: Mitigation and Positive Benefit (30 minutes)<a class="anchor" aria-label="anchor" href="#step-2-mitigation-and-positive-benefit-30-minutes"></a>
-</h3>
-<p>Tell the participants that the mission for each group, then, is to
-make a case for product management to address the threat. This requires
-two things: - A way to address the threat (a ‘mitigation’, in security
-jargon), ideally with an idea of the effort required, or a means to
-discover what effort is required. This only needs to be sketchy. - The
-positive benefit to the organisation of addressing the threat. This
-often requires some ingenuity.</p>
-<p>Ask the participants use the board to explain their conclusions.</p>
 </div>
-<div class="section level3">
-<h3 id="step-3-presentation-5-minutes-per-group">Step 3: Presentation (5 minutes per group)<a class="anchor" aria-label="anchor" href="#step-3-presentation-5-minutes-per-group"></a>
-</h3>
-<p>Ask each group to select a presenter, and have each present the
-selected board to all the groups together. Record the board contents and
-notes of the presentations for reference later.</p>
 </div>
-<div class="section level3">
-<h3 id="note-small-numbers">Note – Small Numbers<a class="anchor" aria-label="anchor" href="#note-small-numbers"></a>
-</h3>
-<p>If working with a small number of participants sufficient only for
-one group, have them repeat steps 1 – 2 for two or three different
-threats, with no presentation step. They can create multiple
-presentations on one board.</p>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3">
-<h3 id="step-4-checklist-discussion">Step 4: Checklist Discussion<a class="anchor" aria-label="anchor" href="#step-4-checklist-discussion"></a>
-</h3>
-<p>Show the checklist slide and briefly describe each of these.</p>
-<p>Return the participants to the same breakout groups to discuss: -
-Which of these should be considered? - How might they manage further
-learning?</p>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>The risk-impact grid is an inaccurate way to assess risks; however it
+is easy to understand and use. More sophisticated teams may well use
+better approaches, but these are outside the scope of this workshop.</p>
 </div>
-<div class="section level3">
-<h3 id="step-5-next-steps">Step 5: Next steps<a class="anchor" aria-label="anchor" href="#step-5-next-steps"></a>
-</h3>
-<p>Ask the breakout groups to identify SMART objectives to take
-forward.</p>
-<p><strong>SMART:</strong> - <strong>S:</strong> Specific -
-<strong>M:</strong> Measurable - <strong>A:</strong> Achievable -
-<strong>R:</strong> Realistic - <strong>T:</strong> Timely</p>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Not all “bad things” are malicious, sometimes accidents happen.</li>
+<li>Threats should be considered by their likeliness and impact.</li>
+</ul>
+</div>
+</div>
+</div>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</section></section><section id="aio-benefit-analysis"><p>Content from <a href="benefit-analysis.html">Benefit Analysis</a></p>
+<hr>
+<p>Last updated on 2025-08-10 |
+
+        <a href="https://github.com/INTERSECT-training/threat-assessment/edit/main/episodes/benefit-analysis.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 5 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do you communicate about threats?</li>
+<li>How do you justify which threats to address?</li>
+</ul>
 </div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>By completing this activity, you should be more knowledgeable on how
+to communicate with managerment/decision makers about threats.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</h2>
+<hr class="half-width">
+<p>By this point, your group should have a risk-impact grid populated
+with the threats that your group came up with.</p>
+<p><strong>Single group workshops</strong>: Now you are going to choose
+2-3 threats that you want to discuss.</p>
+<p><strong>Multi-group workshops</strong>: Now you are going to choose
+one threat that you want to discuss.</p>
+<p>Your new mission is to make a case to Product Management to address
+the threat, using the board to explain your conclusions. This requires
+two things:</p>
+<ul>
+<li>A way to address the threat (a ‘mitigation’, in security jargon),
+ideally with an idea of the effort required, or a means to discover what
+effort is required. This only needs to be sketchy.</li>
+<li>The <strong>positive</strong> benefit to the organisation of
+addressing the threat. This often requires some ingenuity.</li>
+</ul>
+<div id="discussion1" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p><strong>Multi-group workshops</strong>: Select one person to present
+your findings to all of the groups.</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="post-workshop-survey">Post-Workshop Survey<a class="anchor" aria-label="anchor" href="#post-workshop-survey"></a>
+</h2>
+<hr class="half-width">
+<div id="checklist1" class="callout checklist">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check-square"></i>
+</div>
+<span class="callout-header">Checklist</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p><strong>SMART:</strong></p>
+<ul>
+<li>
+<strong>S:</strong> Specific</li>
+<li>
+<strong>M:</strong> Measurable</li>
+<li>
+<strong>A:</strong> Achievable</li>
+<li>
+<strong>R:</strong> Realistic</li>
+<li>
+<strong>T:</strong> Timely</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Please take the remaining time to fill out the post workshop
+survey.</p>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div class="accordion-body">
+<p>If you would like to add a post-workshop survey, I recommend adding a
+QR Code (if in person) or a link here (if online).</p>
+</div>
+</div>
+</div>
+</div>
+<p><a href="https://universityofalabama.az1.qualtrics.com/jfe/form/SV_bjsQdo3qDtP4o86" class="external-link">LINK</a></p>
+<p>At the end of the survey, it will ask you to write a letter to your
+future self on what kind of changes you plan to make to your work
+processes in response to this workshop. When writing this letter,
+consider writing SMART objectives.</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Information on a threat’s likelihood, impact, and cost to address
+are required to make informed decisions on which threats should be
+addressed.</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
 </section></section>
 </div>
     </main>

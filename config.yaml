@@ -76,9 +76,6 @@ learners:
 
 # Information for Instructors
 instructors: 
-- agile-security-game.md
-- threat-assessment.md
-- benefit-analysis.md
 
 # Learner Profiles
 profiles: 
