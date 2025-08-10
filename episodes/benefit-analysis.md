@@ -60,7 +60,13 @@ requires some ingenuity.
 
 Please take the remaining time to fill out the post workshop survey.
 
-![](fig/qr-code.PNG){alt='QR code  for survey'}
+::::::::::::::::::::::::::::::::::::: instructor 
+
+If you would like to add a post-workshop survey, I recommend adding a QR Code (if in person) or a link here (if online).
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+[LINK](https://universityofalabama.az1.qualtrics.com/jfe/form/SV_bjsQdo3qDtP4o86)
 
 At the end of the survey, it will ask you to write a letter to your future self on what kind of changes you plan to make to your work processes in response to this workshop.
 When writing this letter, consider writing SMART objectives.
