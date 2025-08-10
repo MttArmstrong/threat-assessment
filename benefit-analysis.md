@@ -1,63 +1,80 @@
 ---
-title: "Workshop 3: Benefit Analysis"
+title: "Benefit Analysis"
+teaching: 5
+exercises: 0
 ---
 
-This workshop requires:
+:::::::::::::::::::::::::::::::::::::: questions 
 
-1. The results of the previous workshop (boards)
-2. Face-to-face: Flipchart paper at each table, or other means for participants to create a small poster.
+- How do you communicate about threats?
+- How do you justify which threats to address?
 
-## Setup in Advance - Face-to-Face
+::::::::::::::::::::::::::::::::::::::::::::::::
 
-1. From the matrix of threats created in Workshop 2, select the most important 3-5 to discuss.
-There should be at least three participants to discuss each one; if participant numbers are limited, use a smaller number and have each participant discuss more than one (which will take longer).
-2. Put the corresponding post-its widely separated on the walls of the room (perhaps one on each wall).
+::::::::::::::::::::::::::::::::::::: objectives
 
-## Running the Workshop
+- By completing this activity, you should be more knowledgeable on how to communicate with managerment/decision makers about threats.
 
-The timings are approximate. Adjust them according to how the teams are getting on in each step.
+::::::::::::::::::::::::::::::::::::::::::::::::
 
-### Step 1: Selection (5 min)
+## Introduction
 
-**Face-to-face:** Have the participants form groups next to the post-its according to their
-preferences for the threats they each would like to discuss, arranging themselves so that
-appropriate numbers are next to each one.
+By this point, your group should have a risk-impact grid populated with the threats that your group came up with.
 
-### Step 2: Mitigation and Positive Benefit (30 minutes)
 
-Tell the participants that the mission for each group, then, is to make a case for product management to address the threat. 
+**Single group workshops**: Now you are going to choose 2-3 threats that you want to discuss.
+
+**Multi-group workshops**: Now you are going to choose one threat that you want to discuss.
+
+Your new mission is to make a case to Product Management to address the threat, using the board to explain your conclusions.
 This requires two things:
-- A way to address the threat (a ‘mitigation’, in security jargon), ideally with an idea of the effort required, or a means to discover what effort is required. 
+
+- A way to address the threat (a ‘mitigation’, in security jargon), ideally with an
+idea of the effort required, or a means to discover what effort is required.
 This only needs to be sketchy.
-- The positive benefit to the organisation of addressing the threat. This often requires some ingenuity.
+- The **positive** benefit to the organisation of addressing the threat. This often
+requires some ingenuity.
 
-Ask the participants use the board to explain their conclusions.
 
-### Step 3: Presentation (5 minutes per group)
+::::::::::::::::::::::::::::::::::::: discussion 
 
-Ask each group to select a presenter, and have each present the selected board to all the groups together.
-Record the board contents and notes of the presentations for reference later.
+**Multi-group workshops**: Select one person to present your findings to all of the groups.
 
-### Note – Small Numbers
+::::::::::::::::::::::::::::::::::::::::::::::::
 
-If working with a small number of participants sufficient only for one group, have them repeat steps 1 – 2 for two or three different threats, with no presentation step.
-They can create multiple presentations on one board.
 
-### Step 4: Checklist Discussion
 
-Show the checklist slide and briefly describe each of these.
+## Post-Workshop Survey
 
-Return the participants to the same breakout groups to discuss:
-- Which of these should be considered?
-- How might they manage further learning?
-
-### Step 5: Next steps
-Ask the breakout groups to identify SMART objectives to take forward.
+::::::::::::::::::::::::::::::::::::: checklist 
 
 **SMART:**
+
 - **S:** Specific
 - **M:** Measurable
 - **A:** Achievable
 - **R:** Realistic
 - **T:** Timely
 
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+Please take the remaining time to fill out the post workshop survey.
+
+::::::::::::::::::::::::::::::::::::: instructor 
+
+If you would like to add a post-workshop survey, I recommend adding a QR Code (if in person) or a link here (if online).
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+[LINK](https://universityofalabama.az1.qualtrics.com/jfe/form/SV_bjsQdo3qDtP4o86)
+
+At the end of the survey, it will ask you to write a letter to your future self on what kind of changes you plan to make to your work processes in response to this workshop.
+When writing this letter, consider writing SMART objectives.
+
+
+
+::::::::::::::::::::::::::::::::::::: keypoints 
+
+- Information on a threat's likelihood, impact, and cost to address are required to make informed decisions on which threats should be addressed.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
