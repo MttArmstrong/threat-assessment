@@ -22,7 +22,7 @@ exercises: 0
 
 
 ## Setup in Advance
-1. Ensure there is a project for each participant to discuss. Each project should have at least 3 participants who know it well enough to discuss possible security problems.For participants with no such shared projects (or who have reasons not to discuss them), use the ‘MoneyZoom’ project from the previous Agile App Security Game workshop, and ensure each such participant has a printed description available (such as from the previous workshop).
+1. Ensure there is a project for each participant to discuss. Each project should have at least 3 participants who know it well enough to discuss possible security problems.For participants with no such shared projects (or who have reasons not to discuss them), use the ‘MoodRing’ project from the previous Agile App Security Game workshop, and ensure each such participant has a printed description available (such as from the previous workshop).
 
 ### Setup in Advance – Face-to-face
 1. Arrange tables for participants so each table has 3-6 participants, all familiar with one project.

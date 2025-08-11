@@ -58,21 +58,19 @@ The workshop then proceeds in ‘sprints’.
 
 ## Player Instructions
 
-We’ve got a problem. The MoneyZoom money management app we released last week has gone viral. 
+We’ve got a problem. The app we released last week as apart of our researhc project has gone viral. 
 People are downloading it by the tens of thousands; they’re all using it massively, and it’s received thousands of tweets and masses of mentions on every other social network.
-Even the Daily Mail newspaper has had an article on it.
+Even the Sunday newspaper has had an article on it.
 
-Trouble is, we’re a start-up and it was only supposed to be a
+Trouble is, we’re a small team and it was only supposed to be a
 limited pilot.
 We’ve put in only rudimentary security because we believed it under the radar for any of the likely attackers.
-But now we’ve got everyone from celebrities to my grandmother using it to pay for everything from gas bills to online games. AND IT’S NOT SAFE!
-
-![](fig/UI.PNG){alt='UI of Moneyzoom' style="float:right; width:300px;height:auto"}
+But now we’ve got everyone from celebrities to my grandmother using it.
+AND IT’S NOT SAFE!
 
 As the figure to the right shows, the functionality is all there and works well enough – fantastically done, team!
 Your mission now, should you choose to accept it, is to prioritise and implement the security enhancements to the system in the best way to minimise the threat to us and our users.
 Are you up for it? 
-Let’s start now.
 
 It’s an agile project, of course, with two-week sprints.
 So each round in this game is a two week sprint.
@@ -87,7 +85,7 @@ And in the next sprint, and following sprint you do the same again.
 But remember – we also have a released product out there and maybe attackers will be DOING NASTY THINGS.
 Whether they’ll be successful or not depends on what decisions you made.
 
-![](fig/Money_model.PNG){alt='Model of Moneyzoom'}
+![System Model](fig/app_model.PNG){alt='System model for this exercise'}
 
 The game has some simplifications in timing.
 It ignores the time lag for getting apps from release to deployment.
@@ -99,21 +97,17 @@ For each sprint, discuss and agree amongst yourselves which stories to implement
 The purpose and the learning of the game is in the discussion. 
 Once the decisions are made, the game leader will feed back what has happened: any exploits seen during that sprint (of the code in the previous sprint’s release), and any new stories suggested by the learning from that sprint.
 
-## A Little Bit about Moneyzoom
+## A Little Bit about Our App - MoodRing
 
-MoneyZoom is an off-banking app. Here’s what I as a user can do with MoneyZoom:
+We created "MoodRing" to enable participant mood-tracking in mental health studies. Here’s what I as a user can do with MoodRing:
 
-- See the transactions I’ve done
+- Report moods that I have experienced
+- See my mood history
 - Change my name, address and contact details
-- Transfer money to other MoneyZoom users
-- Pay bills to well-known organisations (Utilities, tax)
-- Pay money to other people’s bank accounts
-- Put in money in from my payment card.
+- Discuss with other app users
+- Use the in-app analysis to find patterns in my moods
 
-The MoneyZoom app communicates with an ‘App Server’, which itself is connected to banking back ends, the EMV networks, and a variety of other services, as shown in Figure 2.
-
-
-
+The MoodRing app communicates with an ‘App Server’, which itself is connected to a myriad of services related to storage, processing, and analysis as shown in Figure 2.
 
 <!-- SPRINTS -->
 
@@ -160,12 +154,13 @@ DoSing Kiddie – gets to server by accident – uses for ddos attacks on other 
 
 Scanning Kiddie – gets to server by accident – maliciously deletes all data.
 
-- Backup Server (BS)  **OR**  Server patches up to date (PT)
+- Backup Server (BS): Having a backup server containing a recent backup of our data makes recovering from this event easier.
+- Server patches up to date (PT): Server updates often times inlcude security patches that address identified vulnerabilities and implement countermeasures.
 
 
 DoSing Kiddie – gets to server by accident – uses for ddos attacks on other servers
 
-- Server patches up to date (PT)
+- Server patches up to date (PT): Server updates often times inlcude security patches that address identified vulnerabilities and implement countermeasures.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -201,15 +196,16 @@ Detective or journalist hacker – wants account information for specific users 
 
 Hacking Kiddie – gets to server by accident – downloads and publishes what he finds.
 
-- Server patches up to date (PT)
+- Server patches up to date (PT): Server updates often times inlcude security patches that address identified vulnerabilities and implement countermeasures.
 
 Phishing Kiddie – sends spam email, gets subscribers to download rogue version or enter credentials in spoof website.
 
-- Contingency Plan (CP)  **OR**  Two Factor Authentication (2F*)
+- Contingency Plan (CP): Establishing a publicity plan with keeps the threat in the forefront of the teams mind and allows for faster notifications and warnings to users about phishing threats.
+- Two Factor Authentication (2F*): Establishing two-factor identification helps defend users from phishing attacks and our app from compromised accounts.
 
-Detective or journalist hacker – wants account information for specific users – server hack – publishes information or causes customer complaints.
+Detective or journalist hacker – wants account information for specific users, hacks the server, and publishes information or causes customer complaints.
 
-- Server Pen testing (PT) AND Encrypt and Hide data on server (EH*)
+- Server Pen testing (PT) AND Encrypt and Hide data on server (EH*): External penetration testing (that includes server patching as well) can identify vulnerabilities in our app and patch them accordingly. Encrypting and hiding the data on our server prevents exposure of sensitive data in the event of a security breach or data leak.
 
 \* requires penetration testing
 
@@ -245,18 +241,20 @@ Aggrieved hacker – gains access to server – downloads or modifies server dat
 
 MITM kiddie – Spoofs WiFi access point in airport – Gains credentials – randomly hacks accounts.
 
-- HTTPS in Protocol (HP)  **OR**  Two Factor Authentication (2F)
+- HTTPS in Protocol (HP): HyperText Transfer Protocol Secure utilizes encryption for secure communications over the network, thus protecting traffic between the device and the server.
+- Two Factor Authentication (2F): Establishing two-factor identification helps defend users from phishing attacks and our app from compromised accounts.
 
 Aggrieved hacker – gains access to server – downloads or modifies server data – publicizes.
 
-- Server Pen Testing, **AND** Encrypt and Hide data on Server (PT, EH*).
+- Server Pen Testing, **AND** Encrypt and Hide data on Server (PT, EH*): External penetration testing (that includes server patching as well) can identify vulnerabilities in our app and patch them accordingly. Encrypting and hiding the data on our server prevents exposure of sensitive data in the event of a security breach or data leak.
 
-*(FATAL) MITM Mafia – spoofs WiFi access point in airport – uses dodgy root certificates to validate all banking services - gains credentials – steals small amount from each.*
+*MITM Mafia – spoofs WiFi access point in airport – uses dodgy root certificates to validate all external services - gains credentials – steals personal information from each.*
 
-- Forced Upgrades and SSL Pinning (FU, SS) **OR** Two Factor Authentication (2F)
+- Forced Upgrades and SSL Pinning (FU, SS): Mandating up-to-date app versions and binding authentication certificates to specific services would protect against MITM attacks like this one.
+- Two Factor Authentication (2F): Establishing two-factor identification protects user credentials.
 
 \* requires penetration testing
-
+*Text* Fatal
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -272,11 +270,11 @@ Using **12** points, pick the stories that will be completed this sprint.
 
 ### Something bad happens...
 
-*Mafia Team – Gain access to office, get passwords from server logs, small theft from tens of thousands of accounts.*
+*Mafia Team – Gain access to office, get passwords from server logs, stealing data from tens of thousands of accounts.*
 
-*Mafia Advanced Programming Team – gain access to server though zero day exploit, installed hacked version, transfer money out of accounts.*
+*Mafia Advanced Programming Team – gain access to server though zero day exploit, installed hacked version, modifies mood data.*
 
-*Mafia APT - Malware on device via email – sends back credentials found in logs to command and control server – used to clean out all compromised accounts.*
+*Mafia APT - Malware on device via email – sends back credentials found in logs to command and control server – used to steal and modify data.*
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::: solution
@@ -285,15 +283,18 @@ Using **12** points, pick the stories that will be completed this sprint.
 
 *Mafia Team – Gain access to office, get passwords from server logs, small theft from tens of thousands of accounts.*
 
--Prevent Access to Office (PA) **OR** Filtered Logging for Server (FL) **OR** Two Factor Authentication (2F)
+-Prevent Access to Office (PA): Physical security of servers is just as critical as virtual!
+-Filtered Logging for Server (FL): Ensuring that logs do not contain sensitive or protected data helps prevent data leakage.
+-Two Factor Authentication (2F): Establishing two-factor identification protects user credentials and defends against unauthorized logins.
 
-*Mafia Advanced Programming Team – gain access to server though zero day exploit, installed hacked version, transfer money out of accounts.*
+*Mafia Advanced Programming Team – gain access to server though zero day exploit, installed hacked version, modifies mood data.*
 
-- Network Monitoring for Server (NM)
+- Network Monitoring for Server (NM): Monitoring network traffic is an excellent way find and stop on-going attacks. In this case, an unexpected server patch could indicate malicious activity.
 
-*Mafia APT - Malware on device via email – sends back credentials found in logs to command and control server – used to clean out all compromised accounts.*
+*Mafia APT - Malware on device via email – sends back credentials found in logs to command and control server – used to steal and modify data.*
 
-- Forced Upgrades **AND** Sanitize App Logging (FU, SA), **else**: Two Factor Authentication (2F)
+- Forced Upgrades **AND** Sanitize App Logging (FU, SA): Keeping strict requirements on app-versions can detect or defend against disguised malicious malware. In this example, sanitizing logs wold prevent secret data from being discovered and leaked.
+- Two Factor Authentication (2F): Establishing two-factor identification protects user credentials and defends against unauthorized logins.
 
 \* requires penetration testing
 
