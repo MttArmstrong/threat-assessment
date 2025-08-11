@@ -85,7 +85,7 @@ And in the next sprint, and following sprint you do the same again.
 But remember – we also have a released product out there and maybe attackers will be DOING NASTY THINGS.
 Whether they’ll be successful or not depends on what decisions you made.
 
-![System Model](fig/app_model.PNG){alt='System model for this exercise'}
+![System Model](fig/app_model.png){alt='System model for this exercise'}
 
 The game has some simplifications in timing.
 It ignores the time lag for getting apps from release to deployment.
