@@ -226,7 +226,7 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#player-instructions">Player Instructions</a></li>
-<li><a href="#a-little-bit-about-moneyzoom">A Little Bit about Moneyzoom</a></li>
+<li><a href="#a-little-bit-about-our-app---moodring">A Little Bit about Our App - MoodRing</a></li>
 <li><a href="#sprints">Sprints</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
@@ -310,7 +310,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Agile Security Game</h1>
-        <p>Last updated on 2025-08-10 |
+        <p>Last updated on 2025-08-11 |
 
         <a href="https://github.com/INTERSECT-training/threat-assessment/edit/main/episodes/agile-security-game.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -349,21 +349,21 @@ letters).</li>
 </div>
 
 <section><h2 class="section-heading" id="player-instructions">Player Instructions<a class="anchor" aria-label="anchor" href="#player-instructions"></a></h2>
-<hr class="half-width"><p>We’ve got a problem. The MoneyZoom money management app we released
-last week has gone viral. People are downloading it by the tens of
-thousands; they’re all using it massively, and it’s received thousands
-of tweets and masses of mentions on every other social network. Even the
-Daily Mail newspaper has had an article on it.</p>
-<p>Trouble is, we’re a start-up and it was only supposed to be a limited
-pilot. We’ve put in only rudimentary security because we believed it
-under the radar for any of the likely attackers. But now we’ve got
-everyone from celebrities to my grandmother using it to pay for
-everything from gas bills to online games. AND IT’S NOT SAFE!</p>
-<figure><img src="fig/UI.PNG" style="float:right; width:300px;height:auto" alt="UI of Moneyzoom" class="figure mx-auto d-block"></figure><p>As the figure to the right shows, the functionality is all there and
+<hr class="half-width"><p>We’ve got a problem. The app we released last week as apart of our
+researhc project has gone viral. People are downloading it by the tens
+of thousands; they’re all using it massively, and it’s received
+thousands of tweets and masses of mentions on every other social
+network. Even the Sunday newspaper has had an article on it.</p>
+<p>Trouble is, we’re a small team and it was only supposed to be a
+limited pilot. We’ve put in only rudimentary security because we
+believed it under the radar for any of the likely attackers. But now
+we’ve got everyone from celebrities to my grandmother using it. AND IT’S
+NOT SAFE!</p>
+<p>As the figure to the right shows, the functionality is all there and
 works well enough – fantastically done, team! Your mission now, should
 you choose to accept it, is to prioritise and implement the security
 enhancements to the system in the best way to minimise the threat to us
-and our users. Are you up for it? Let’s start now.</p>
+and our users. Are you up for it?</p>
 <p>It’s an agile project, of course, with two-week sprints. So each
 round in this game is a two week sprint. And for each sprint you have
 story cards with options you can take, and the estimated cost for each
@@ -383,7 +383,8 @@ taken in the past.</p>
 But remember – we also have a released product out there and maybe
 attackers will be DOING NASTY THINGS. Whether they’ll be successful or
 not depends on what decisions you made.</p>
-<figure><img src="fig/Money_model.PNG" alt="Model of Moneyzoom" class="figure mx-auto d-block"></figure><p>The game has some simplifications in timing. It ignores the time lag
+<figure><img src="fig/app_model.PNG" alt="System model for this exercise" class="figure mx-auto d-block"><div class="figcaption">System Model</div>
+</figure><p>The game has some simplifications in timing. It ignores the time lag
 for getting apps from release to deployment. It assumes a stunningly
 agile team who can all move easily from server to app and from coding to
 reviewing to pen testing. And, remarkably, each task turns out to take
@@ -397,18 +398,17 @@ discussion. Once the decisions are made, the game leader will feed back
 what has happened: any exploits seen during that sprint (of the code in
 the previous sprint’s release), and any new stories suggested by the
 learning from that sprint.</p>
-</section><section><h2 class="section-heading" id="a-little-bit-about-moneyzoom">A Little Bit about Moneyzoom<a class="anchor" aria-label="anchor" href="#a-little-bit-about-moneyzoom"></a></h2>
-<hr class="half-width"><p>MoneyZoom is an off-banking app. Here’s what I as a user can do with
-MoneyZoom:</p>
-<ul><li>See the transactions I’ve done</li>
+</section><section><h2 class="section-heading" id="a-little-bit-about-our-app---moodring">A Little Bit about Our App - MoodRing<a class="anchor" aria-label="anchor" href="#a-little-bit-about-our-app---moodring"></a></h2>
+<hr class="half-width"><p>We created “MoodRing” to enable participant mood-tracking in mental
+health studies. Here’s what I as a user can do with MoodRing:</p>
+<ul><li>Report moods that I have experienced</li>
+<li>See my mood history</li>
 <li>Change my name, address and contact details</li>
-<li>Transfer money to other MoneyZoom users</li>
-<li>Pay bills to well-known organisations (Utilities, tax)</li>
-<li>Pay money to other people’s bank accounts</li>
-<li>Put in money in from my payment card.</li>
-</ul><p>The MoneyZoom app communicates with an ‘App Server’, which itself is
-connected to banking back ends, the EMV networks, and a variety of other
-services, as shown in Figure 2.</p>
+<li>Discuss with other app users</li>
+<li>Use the in-app analysis to find patterns in my moods</li>
+</ul><p>The MoodRing app communicates with an ‘App Server’, which itself is
+connected to a myriad of services related to storage, processing, and
+analysis as shown in Figure 2.</p>
 <!-- SPRINTS -->
 </section><section><h2 class="section-heading" id="sprints">Sprints<a class="anchor" aria-label="anchor" href="#sprints"></a></h2>
 <hr class="half-width"><div id="sprint-1" class="callout challenge">
@@ -452,11 +452,16 @@ other servers</p>
 <div class="accordion-body">
 <p>Scanning Kiddie – gets to server by accident – maliciously deletes
 all data.</p>
-<ul><li>Backup Server (BS) <strong>OR</strong> Server patches up to date
-(PT)</li>
+<ul><li>Backup Server (BS): Having a backup server containing a recent
+backup of our data makes recovering from this event easier.</li>
+<li>Server patches up to date (PT): Server updates often times inlcude
+security patches that address identified vulnerabilities and implement
+countermeasures.</li>
 </ul><p>DoSing Kiddie – gets to server by accident – uses for ddos attacks on
 other servers</p>
-<ul><li>Server patches up to date (PT)</li>
+<ul><li>Server patches up to date (PT): Server updates often times inlcude
+security patches that address identified vulnerabilities and implement
+countermeasures.</li>
 </ul></div>
 </div>
 </div>
@@ -505,16 +510,25 @@ complaints.</p>
 <div class="accordion-body">
 <p>Hacking Kiddie – gets to server by accident – downloads and publishes
 what he finds.</p>
-<ul><li>Server patches up to date (PT)</li>
+<ul><li>Server patches up to date (PT): Server updates often times inlcude
+security patches that address identified vulnerabilities and implement
+countermeasures.</li>
 </ul><p>Phishing Kiddie – sends spam email, gets subscribers to download
 rogue version or enter credentials in spoof website.</p>
-<ul><li>Contingency Plan (CP) <strong>OR</strong> Two Factor Authentication
-(2F*)</li>
+<ul><li>Contingency Plan (CP): Establishing a publicity plan with keeps the
+threat in the forefront of the teams mind and allows for faster
+notifications and warnings to users about phishing threats.</li>
+<li>Two Factor Authentication (2F*): Establishing two-factor
+identification helps defend users from phishing attacks and our app from
+compromised accounts.</li>
 </ul><p>Detective or journalist hacker – wants account information for
-specific users – server hack – publishes information or causes customer
-complaints.</p>
-<ul><li>Server Pen testing (PT) AND Encrypt and Hide data on server
-(EH*)</li>
+specific users, hacks the server, and publishes information or causes
+customer complaints.</p>
+<ul><li>Server Pen testing (PT) AND Encrypt and Hide data on server (EH*):
+External penetration testing (that includes server patching as well) can
+identify vulnerabilities in our app and patch them accordingly.
+Encrypting and hiding the data on our server prevents exposure of
+sensitive data in the event of a security breach or data leak.</li>
 </ul><p>* requires penetration testing</p>
 </div>
 </div>
@@ -564,18 +578,29 @@ credentials – steals small amount from each.</em></p>
 <div class="accordion-body">
 <p>MITM kiddie – Spoofs WiFi access point in airport – Gains credentials
 – randomly hacks accounts.</p>
-<ul><li>HTTPS in Protocol (HP) <strong>OR</strong> Two Factor Authentication
-(2F)</li>
+<ul><li>HTTPS in Protocol (HP): HyperText Transfer Protocol Secure utilizes
+encryption for secure communications over the network, thus protecting
+traffic between the device and the server.</li>
+<li>Two Factor Authentication (2F): Establishing two-factor
+identification helps defend users from phishing attacks and our app from
+compromised accounts.</li>
 </ul><p>Aggrieved hacker – gains access to server – downloads or modifies
 server data – publicizes.</p>
 <ul><li>Server Pen Testing, <strong>AND</strong> Encrypt and Hide data on
-Server (PT, EH*).</li>
-</ul><p><em>(FATAL) MITM Mafia – spoofs WiFi access point in airport – uses
-dodgy root certificates to validate all banking services - gains
-credentials – steals small amount from each.</em></p>
-<ul><li>Forced Upgrades and SSL Pinning (FU, SS) <strong>OR</strong> Two
-Factor Authentication (2F)</li>
-</ul><p>* requires penetration testing</p>
+Server (PT, EH*): External penetration testing (that includes server
+patching as well) can identify vulnerabilities in our app and patch them
+accordingly. Encrypting and hiding the data on our server prevents
+exposure of sensitive data in the event of a security breach or data
+leak.</li>
+</ul><p><em>MITM Mafia – spoofs WiFi access point in airport – uses dodgy
+root certificates to validate all external services - gains credentials
+– steals personal information from each.</em></p>
+<ul><li>Forced Upgrades and SSL Pinning (FU, SS): Mandating up-to-date app
+versions and binding authentication certificates to specific services
+would protect against MITM attacks like this one.</li>
+<li>Two Factor Authentication (2F): Establishing two-factor
+identification protects user credentials.</li>
+</ul><p>* requires penetration testing <em>Text</em> Fatal</p>
 </div>
 </div>
 </div>
@@ -603,13 +628,12 @@ completed this sprint.</p>
 <div id="collapseHint4" class="accordion-collapse collapse" aria-labelledby="headingHint4" data-bs-parent="#accordionHint4">
 <div class="accordion-body">
 <p><em>Mafia Team – Gain access to office, get passwords from server
-logs, small theft from tens of thousands of accounts.</em></p>
+logs, stealing data from tens of thousands of accounts.</em></p>
 <p><em>Mafia Advanced Programming Team – gain access to server though
-zero day exploit, installed hacked version, transfer money out of
-accounts.</em></p>
+zero day exploit, installed hacked version, modifies mood data.</em></p>
 <p><em>Mafia APT - Malware on device via email – sends back credentials
-found in logs to command and control server – used to clean out all
-compromised accounts.</em></p>
+found in logs to command and control server – used to steal and modify
+data.</em></p>
 </div>
 </div>
 </div>
@@ -625,17 +649,27 @@ compromised accounts.</em></p>
 <div class="accordion-body">
 <p><em>Mafia Team – Gain access to office, get passwords from server
 logs, small theft from tens of thousands of accounts.</em></p>
-<p>-Prevent Access to Office (PA) <strong>OR</strong> Filtered Logging
-for Server (FL) <strong>OR</strong> Two Factor Authentication (2F)</p>
+<p>-Prevent Access to Office (PA): Physical security of servers is just
+as critical as virtual! -Filtered Logging for Server (FL): Ensuring that
+logs do not contain sensitive or protected data helps prevent data
+leakage. -Two Factor Authentication (2F): Establishing two-factor
+identification protects user credentials and defends against
+unauthorized logins.</p>
 <p><em>Mafia Advanced Programming Team – gain access to server though
-zero day exploit, installed hacked version, transfer money out of
-accounts.</em></p>
-<ul><li>Network Monitoring for Server (NM)</li>
+zero day exploit, installed hacked version, modifies mood data.</em></p>
+<ul><li>Network Monitoring for Server (NM): Monitoring network traffic is an
+excellent way find and stop on-going attacks. In this case, an
+unexpected server patch could indicate malicious activity.</li>
 </ul><p><em>Mafia APT - Malware on device via email – sends back credentials
-found in logs to command and control server – used to clean out all
-compromised accounts.</em></p>
-<ul><li>Forced Upgrades <strong>AND</strong> Sanitize App Logging (FU, SA),
-<strong>else</strong>: Two Factor Authentication (2F)</li>
+found in logs to command and control server – used to steal and modify
+data.</em></p>
+<ul><li>Forced Upgrades <strong>AND</strong> Sanitize App Logging (FU, SA):
+Keeping strict requirements on app-versions can detect or defend against
+disguised malicious malware. In this example, sanitizing logs wold
+prevent secret data from being discovered and leaked.</li>
+<li>Two Factor Authentication (2F): Establishing two-factor
+identification protects user credentials and defends against
+unauthorized logins.</li>
 </ul><p>* requires penetration testing</p>
 <p><em>Text</em> Fatal</p>
 </div>
@@ -738,8 +772,8 @@ any links that you are not going to use.
   "url": "https://INTERSECT-training.github.io/threat-assessment/agile-security-game.html",
   "identifier": "https://INTERSECT-training.github.io/threat-assessment/agile-security-game.html",
   "dateCreated": "2025-07-07",
-  "dateModified": "2025-08-10",
-  "datePublished": "2025-08-10"
+  "dateModified": "2025-08-11",
+  "datePublished": "2025-08-11"
 }
 
   </script><script>
